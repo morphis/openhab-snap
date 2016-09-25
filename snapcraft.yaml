@@ -1,0 +1,28 @@
+name: openhab
+version: 2.0.0.b4-1
+summary: Empowering the Smart Home
+description: |
+    The open Home Automation Bus (openHAB) is an open source,
+    technology-agnostic home automation platform.
+    For more information please see http://www.openhab.org/
+confinement: devmode
+grade: devel
+
+apps:
+    server:
+        command: bin/server.sh
+
+parts:
+    common:
+        plugin: dump
+        source: .
+        snap:
+            - bin/server.sh
+    openhab:
+        plugin: dump
+        source: git://github.com/morphis/openhab-snap
+        source-branch: 
+    jdk:
+        plugin: jdk
+        source: .
+
