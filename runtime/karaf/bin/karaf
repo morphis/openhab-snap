@@ -437,7 +437,7 @@ run() {
         $KARAF_EXEC "$JAVA" $JAVA_OPTS \
             -Djava.endorsed.dirs="${JAVA_ENDORSED_DIRS}" \
             -Djava.ext.dirs="${JAVA_EXT_DIRS}" \
-            -Dkaraf.instances="${KARAF_HOME}/instances" \
+            -Dkaraf.instances="${SNAP_DATA}/karaf-instances" \
             -Dkaraf.home="$KARAF_HOME" \
             -Dkaraf.base="$KARAF_BASE" \
             -Dkaraf.data="$KARAF_DATA" \
