@@ -21,7 +21,7 @@ parts:
     openhab:
         plugin: dump
         source: git://github.com/morphis/openhab-snap
-        source-branch: 
+        source-branch: openhab/2.0.0.b4
     jdk:
         plugin: jdk
         source: .
